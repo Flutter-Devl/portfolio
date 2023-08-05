@@ -10,7 +10,7 @@ class UpperContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: width,
-      color: CustomColors.brightBackground,
+      color: MyCustomColors.brightBackground,
       padding: const EdgeInsets.only(bottom: 20),
       child: LayoutBuilder(builder: (context, constraints) {
         bool isLargeScreen = constraints.maxWidth >= Breakpoints.lg;

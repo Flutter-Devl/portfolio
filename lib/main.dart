@@ -18,9 +18,9 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        primaryColor: CustomColors.primary,
-        splashColor: CustomColors.primary,
-        highlightColor: CustomColors.primary,
+        primaryColor: MyCustomColors.primary,
+        splashColor: MyCustomColors.primary,
+        highlightColor: MyCustomColors.primary,
       ),
       title: 'Flutter Developer Portfolio',
       home: const Portfolio(),

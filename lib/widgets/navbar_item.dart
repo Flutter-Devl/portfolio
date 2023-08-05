@@ -30,13 +30,14 @@ class NavBarItem extends StatelessWidget {
                 text,
                 style: TextStyle(
                   fontSize: 16.0,
-                  color:
-                      isHighlighted.value ? CustomColors.primary : Colors.white,
+                  color: isHighlighted.value
+                      ? MyCustomColors.primary
+                      : Colors.white,
                 ),
               ),
               const SizedBox(height: 6),
               if (isHighlighted.value)
-                Container(width: 40, height: 1, color: CustomColors.primary),
+                Container(width: 40, height: 1, color: MyCustomColors.primary),
             ],
           ),
         ),

@@ -17,8 +17,8 @@ class NavBarButton extends StatelessWidget {
         elevation: 4.0,
         shape: const CircleBorder(),
         padding: EdgeInsets.all(padding),
-        backgroundColor: CustomColors.darkBackground,
-        foregroundColor: CustomColors.brightBackground,
+        backgroundColor: MyCustomColors.darkBackground,
+        foregroundColor: MyCustomColors.brightBackground,
       ),
       child: const Icon(Icons.menu, color: Colors.white),
     );

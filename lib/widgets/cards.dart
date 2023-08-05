@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/common/constants.dart';
 
 class SkillCard extends StatelessWidget {
@@ -20,10 +19,9 @@ class SkillCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final textStyle =
-        GoogleFonts.getFont('Delius', color: CustomColors.gray, fontSize: 12);
+    final textStyle = GoogleFont.style2;
     return Card(
-      color: CustomColors.brightBackground,
+      color: MyCustomColors.brightBackground,
       child: SizedBox(
         width: width * ratio,
         child: Stack(
@@ -34,11 +32,7 @@ class SkillCard extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    title,
-                    style: GoogleFonts.getFont('Delius',
-                        color: CustomColors.primary, fontSize: 16),
-                  ),
+                  Text(title, style: GoogleFont.style3),
                   const SizedBox(height: 20),
                   Text(description, style: textStyle),
                 ],

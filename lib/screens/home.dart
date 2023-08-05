@@ -50,13 +50,13 @@ class _PortfolioState extends State<Portfolio> {
                         scrollController.position.minScrollExtent,
                         duration: const Duration(milliseconds: 700),
                         curve: Curves.easeInOut),
-                    backgroundColor: CustomColors.primary,
+                    backgroundColor: MyCustomColors.primary,
                     child: const Icon(Icons.arrow_upward,
-                        color: CustomColors.darkBackground)),
+                        color: MyCustomColors.darkBackground)),
               ),
           showFloatingButton),
       body: Container(
-        color: CustomColors.brightBackground,
+        color: MyCustomColors.brightBackground,
         width: width,
         child: SingleChildScrollView(
           controller: scrollController,
@@ -67,11 +67,10 @@ class _PortfolioState extends State<Portfolio> {
                   const SizedBox(height: 130),
                   UpperContainer(width: width),
                   LowerContainer(width: width, skillsKey: skillsKey),
-                 
                   Container(
                     width: width,
                     height: 0.1,
-                    color: CustomColors.gray,
+                    color: MyCustomColors.gray,
                   ),
                   Footer(
                     width: width,

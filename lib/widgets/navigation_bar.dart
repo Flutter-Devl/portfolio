@@ -62,13 +62,13 @@ class NavBar extends StatelessWidget {
               children: [
                 NavBarItemWithIcon(
                   text: 'github',
-                  icon: ImageAssetConstants.github,
+                  icon: ImageAsset.github,
                   url: '',
                 ),
                 SizedBox(width: 10),
                 NavBarItemWithIcon(
                   text: 'linkedIn',
-                  icon: ImageAssetConstants.linkedIn,
+                  icon: ImageAsset.linkedIn,
                   url: '',
                 ),
                 SizedBox(width: 50),
@@ -114,7 +114,8 @@ class NavBar extends StatelessWidget {
             curve: Curves.ease,
             height: data.value,
             width: double.infinity,
-            decoration: const BoxDecoration(color: CustomColors.darkBackground),
+            decoration:
+                const BoxDecoration(color: MyCustomColors.darkBackground),
             child: SingleChildScrollView(
               child: Column(children: navBarColumn),
             ),

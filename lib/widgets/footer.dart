@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/common/constants.dart';
 
 class Footer extends StatelessWidget {
@@ -11,11 +10,10 @@ class Footer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final textStyle = GoogleFonts.getFont('Delius',
-        color: CustomColors.gray, fontSize: 14);
+    final textStyle = GoogleFont.style1;
 
     return Container(
-      color: CustomColors.darkBackground,
+      color: MyCustomColors.darkBackground,
       padding: const EdgeInsets.symmetric(vertical: 20),
       width: width,
       child: Column(

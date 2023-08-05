@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/common/constants.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 
@@ -22,13 +21,10 @@ class Description extends StatelessWidget {
             width: 200,
             height: 40,
             alignment: Alignment.center,
-            color: CustomColors.primary,
+            color: MyCustomColors.primary,
             child: Center(
-              child: Text(
-                'Mobile Application Developer',
-                style: GoogleFonts.getFont('Days One',
-                    color: Colors.black, fontSize: 10),
-              ),
+              child: Text('Mobile Application Developer',
+                  style: GoogleFont.style6),
             ),
           ),
           SizedBox(height: 0.015 * width),
@@ -42,11 +38,7 @@ class Description extends StatelessWidget {
                 TyperAnimatedText(
                   "Designing solutions,\nCoding dreams.",
                   textAlign: isVertical ? TextAlign.center : TextAlign.start,
-                  textStyle: GoogleFonts.getFont(
-                    'Delius',
-                    color: Colors.white,
-                    fontSize: 30,
-                  ),
+                  textStyle: GoogleFont.style7,
                 ),
               ],
             ),
